@@ -16,7 +16,7 @@ public class Main {
                 break;
             case (1):
                 System.out.println("********************************");
-                System.out.println("Please Input Student Info:");
+                System.out.println("Please Input Student:");
                 System.out.println("Name,StuID,Gender,Level,Programme");
                 String stuInfo = scanner.next();
                 if ("".equals(stuInfo) || stuInfo == null
