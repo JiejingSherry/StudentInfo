@@ -16,8 +16,8 @@ public class Main {
                 break;
             case (1):
                 System.out.println("********************************");
-                System.out.println("请输入学生信息:");
-                System.out.println("姓名,学号,年龄,语文,数学,英语");
+                System.out.println("Please Input Student Info:");
+                System.out.println("Name,StuID,Gender,Level,Programme");
                 String stuInfo = scanner.next();
                 if ("".equals(stuInfo) || stuInfo == null
                         || !stuInfo.matches("^[\\w]+[,][\\d]+[,][\\d]+[,][\\d]+[,][\\d]+[,][\\d]+$")) {
@@ -28,7 +28,7 @@ public class Main {
                     System.out.println("********************************");
                 }
                 con.add(initStuInfo(stuInfo));
-                System.out.println("Result：add successful");
+                System.out.println("Resultï¼šadd successful");
                 System.out.println("********************************");
                 break;
             case (2):
@@ -51,12 +51,12 @@ public class Main {
                     System.out.println("********************************");
                 }
                 con.update(initStuInfo(stuInfo1));
-                System.out.println("Result：Successful");
+                System.out.println("Resultï¼šSuccessful");
                 System.out.println("********************************");
                 break;
             case (4):
                 System.out.println("********************************");
-                System.out.println("Input：Student Info:");
+                System.out.println("Inputï¼šStudent Info:");
                 String sno1 = scanner.next();
                 Student stu = con.queryBySno(sno1);
                 if (stu != null) {
@@ -87,7 +87,7 @@ public class Main {
         System.out.println("************************");
     }
 
-    // 输入学生信息
+    // è¾“å…¥å­¦ç”Ÿä¿¡æ�¯
     private static Student initStuInfo(String inputStr) {
         Student student = new Student();
         if (inputStr.length() <= 0) {
