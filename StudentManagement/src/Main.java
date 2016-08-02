@@ -16,7 +16,7 @@ public class Main {
                 break;
             case (1):
                 System.out.println("********************************");
-                System.out.println("Please Input Student Info:");
+                System.out.println("Plz Input Student Info:");
                 System.out.println("Name,StuID,Gender,Level,Programme");
                 String stuInfo = scanner.next();
                 if ("".equals(stuInfo) || stuInfo == null
@@ -28,7 +28,7 @@ public class Main {
                     System.out.println("********************************");
                 }
                 con.add(initStuInfo(stuInfo));
-                System.out.println("Resultï¼šadd successful");
+                System.out.println("ResultÃ¯Â¼Å¡add successful");
                 System.out.println("********************************");
                 break;
             case (2):
@@ -51,12 +51,12 @@ public class Main {
                     System.out.println("********************************");
                 }
                 con.update(initStuInfo(stuInfo1));
-                System.out.println("Resultï¼šSuccessful");
+                System.out.println("ResultÃ¯Â¼Å¡Successful");
                 System.out.println("********************************");
                 break;
             case (4):
                 System.out.println("********************************");
-                System.out.println("Inputï¼šStudent Info:");
+                System.out.println("InputÃ¯Â¼Å¡Student Info:");
                 String sno1 = scanner.next();
                 Student stu = con.queryBySno(sno1);
                 if (stu != null) {
@@ -87,7 +87,7 @@ public class Main {
         System.out.println("************************");
     }
 
-    // è¾“å…¥å­¦ç”Ÿä¿¡æ�¯
+    // Ã¨Â¾â€œÃ¥â€¦Â¥Ã¥Â­Â¦Ã§â€�Å¸Ã¤Â¿Â¡Ã¦ï¿½Â¯
     private static Student initStuInfo(String inputStr) {
         Student student = new Student();
         if (inputStr.length() <= 0) {
